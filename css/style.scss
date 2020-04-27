@@ -1,0 +1,84 @@
+$titlebox: skyblue;
+
+body{background-color: lightgray;}
+
+.bar{
+  background-color: $titlebox;
+  width:auto ;
+  height: 150px;
+  position: relative;
+  top:0px
+  }
+
+  .bar{
+    background-color: $titlebox;
+    width:auto ;
+    height: 150px;
+    position: relative;
+    top:0px;
+    }
+
+  .title{font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  left: 650px;
+  top:30px;
+  }
+  @media (max-width: 1100px) {.title
+  {font-size: 25px;
+  position: relative;
+  left: 5px;
+  top:  50px;}}
+
+  .col-1{
+  text-align: center;
+  position: relative;
+  top: -30px;
+  left: 5px;
+  color: White;}
+
+  #home::before{content:"\2302";
+  Font-size: 50px;
+  color: Black;
+  position: relative;
+  left: 20px;
+  top: -40px}
+
+  .col-1:hover {color: black;}
+
+  #effects{color: black;
+          ul{color: dimgray;}
+  }
+
+  @media (max-width: 1200px )
+  {.col-1 {font-size: 10px; position: relative;}}
+
+  @media (max-width: 500px)
+  {.col-1{font-size: 10px}}
+
+  @media (max-width: 600px)
+  {#home{ position: relative; left: 0px }}
+  @media (max-width: 600px)
+  {#what{ position: relative; left: 40px }
+  }@media (max-width: 600px)
+  {#diag{ position: relative; left: 80px }}
+  @media (max-width: 600px)
+  {#symp{ position: relative; left: 50px }}
+  @media (max-width: 600px)
+  {#treat{ position: relative; left: 100px }}
+
+
+  @media (max-width: 1200px )
+  {#meds, #surg, #chest {width: 0px; height: 0px}}
+
+  .first > li {font-weight: bold;}
+
+
+  %mainpoints{font-size: 20px;
+    font-weight: bold;
+    color: dimgray}
+
+.col-9{@extend %mainpoints;}
+.head{@extend %mainpoints;
+     font-family: sans-serif}
+.point{@extend %mainpoints;}
